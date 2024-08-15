@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Todo Avançado</h1>
+        </header>
+        <!-- Formulário de envio da tarefa -->
+        <form id="form-todo" action="">
+            <div class="input-control column">
+                <p>Adicione sua tarefa</p>
+                <div class="tarefa">
+                    <input type="text" placeholder="Digite a sua tarefa" id="input-tarefa">
+
+                    <button>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+        </form>
+
+        <!-- Formulário de edição da tarefa-->
+        <form id="form-edit" class="none">
+            <div>
+                <div class="input-control column">
+                    <p>Edite sua tarefa</p>
+                    <div class="tarefa">
+                        <input type="text" id="input-edit">
+
+                        <button>
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </button>
+                    </div>
+                    <button class="cancelar">Cancelar</button>
+                </div>
+
+            </div>
+        </form>
+
+        <!-- Seção Pesquisa e Filtro -->
+        <div class="form-pesquisa">
+            <div class="input-control form-pesquisa">
+                <div class="pesquisa" id="pesquisa">
+                    <p>Pesquisar</p>
+                    <form>
+                        <input type="text" placeholder="Buscar..." id="input-pesquisa">
+                        <button id="limpar">
+                            <i class="fa-solid fa-broom"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="filtro" id="filtro">
+                    <p>Filtrar</p>
+                    <select id="select-filtro">
+                        <option value="todos">Todos</option>
+                        <option value="feitos">Feitos</option>
+                        <option value="nao-feitos">Não Feitos</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- Onde serão exibidas as tarefas -->
+        <div id="notas">
+            <!-- <div class="anotacoes">
+                <p>entrar no banheiro e ligar o chuveiro para dar banho na erva</p>
+                <div class="buttons-anotacoes">
+                    <button class="check">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                    <button class="edit">
+                        <i class="fa-solid fa-pen"></i>
+                    </button>
+                    <button class="deletar">
+                        <i class="fa-solid fa-x"></i>
+                    </button>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+</body>
+
+</html>
